@@ -53,13 +53,13 @@ class GUI:
         world.raportText.set("\nHere will be placed info about\nkilling, dying etc..\n")
         self.raportLabel.pack(side=TOP, fill=X)
 
-        world.infoText.set("\nWelcome!\nWSAD - move human (C icon)\nEnter - next round\nPress Left Mouse Button to insert random creature\ne - drink +3 strength elixir")
+        world.infoText.set("\nWelcome!\nWSAD - move human (C icon)\nEnter - next round\nPress Left Mouse Button to insert random creature\ne - drink +3 strength elixir\nOriginal code by micmarty\nUpdated by TheDarkTiger")
         self.infoLabel.pack(side=TOP, fill=X)
 
     def __init__(self, master, world):
         #-MAIN WINDOW
         self.master = master
-        self.master.title("Wild world simulator by micmarty")
+        self.master.title("Wild World Simulator")
         self.master.resizable(0, 0)
 
         #-FRAMES (Division main window by 2)

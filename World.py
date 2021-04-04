@@ -52,7 +52,9 @@ class World:
         for y in range(20):
             for x in range(20):
                 if self.organism[x][y] is None:
-                    gui.label[x][y].configure(image=PhotoImage(file='icons/pusty.png'))
+                    icon = PhotoImage(file='icons/pusty.png')
+                    gui.label[x][y].configure(image=icon)
+                    gui.label[x][y].image = icon
                 else:
                     gui.label[x][y].configure(image=self.organism[x][y].icon)
 
